@@ -17,4 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Test the code
+      - name: install dependencies
+        run: npm install
+      - name: run tests
+        run: npm test
         run: echo "Replace this with the test code"
